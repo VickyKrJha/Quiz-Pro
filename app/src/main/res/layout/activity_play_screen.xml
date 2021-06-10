@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/firstactivity"
+    android:gravity="center"
+    tools:context=".PlayScreen">
+
+
+    <Button
+        android:id="@+id/bt_playQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:background="@drawable/play_screen_buttonbg"
+        android:padding="10dp"
+        android:text="Play Quiz"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <Button
+        android:id="@+id/bt_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/play_screen_setting_buttonbg"
+        android:padding="10dp"
+        android:text="Settings"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_playQuiz" />
+
+    <Button
+        android:id="@+id/bt_quizrules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/information_button_bg"
+        android:padding="10dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="Quiz Rules"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_settings" />
+
+    <ImageView
+        android:id="@+id/appicon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/quizprologo" />
+
+    <TextView
+        android:id="@+id/apptitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Quiz"
+        android:textSize="65sp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textColor="#FF0059"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/appicon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/apptitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pro"
+        android:textSize="45sp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textColor="#0037FF"
+        app:layout_constraintEnd_toEndOf="@+id/apptitle1"
+        app:layout_constraintStart_toStartOf="@+id/apptitle1"
+        app:layout_constraintTop_toBottomOf="@+id/apptitle1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

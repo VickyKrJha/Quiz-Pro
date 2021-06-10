@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vickysg.quizforprogrammers">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GameRules"/>
+        <activity android:name=".PlayScreen"/>
+        <activity android:name=".JavaLevelsActivity" />
+        <activity android:name=".KoltinLevelsActivity" />
+        <activity android:name=".PythonLevelsActivity" />
+        <activity android:name=".CategoryActivity" />
+        <activity android:name=".Settings" />
+        <activity android:name=".QuizActivity"
+            android:noHistory="true" />
+        <activity android:name=".Result" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3912259549278001~3299363759" />
+    </application>
+
+</manifest>

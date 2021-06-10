@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:background="@drawable/setting_containerbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/clock_grey"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Oops !  End Time"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/play_screen_setting_buttonbg"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Times Up!"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/bt_timer"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/information_button_bg"
+            android:text="OK"/>
+
+    </LinearLayout>
+</LinearLayout>

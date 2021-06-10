@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/firstactivity"
+    tools:context=".GameRules">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/play_screen_buttonbg"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="Quiz Rules"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/for_unlock_the_level_n_n_first_give_three_correct_nanswers_for_unlocking_nnext_level"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/information_button_bg"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="Ok"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/appicon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/quizprologo" />
+
+    <TextView
+        android:id="@+id/apptitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Quiz"
+        android:textSize="65sp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textColor="#FF0059"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/appicon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/apptitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pro"
+        android:textSize="45sp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textColor="#0037FF"
+        app:layout_constraintEnd_toEndOf="@+id/apptitle1"
+        app:layout_constraintStart_toStartOf="@+id/apptitle1"
+        app:layout_constraintTop_toBottomOf="@+id/apptitle1" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
